@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Arquivo CSS externo -->
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="esquerda">
+                <h1>sample text</h1>
+            </div>
+            <div id="direita">
+                <h1>sample text</h1>
+            </div>
+
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li class="active"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h1>Fale Conosco</h1>
+                <form action="#" method="get" id="frm" name="frm">
+                    <label for="txtnome">Nome*</label>
+                    <input type="text" name="txtnome" id="txtnome" placeholder="Digite seu nome aqui." required>
+
+                    <label for="txtemail">Email*</label>
+                    <input type="email" name="txtemail" id="txtemail" placeholder="Digite seu email aqui." required>
+
+                    <label for="txtnasc">Data de Nascimento*</label>
+                    <input type="date" name="txtnasc" id="txtnasc" required>
+
+                    <!-- <label for="txtsalario">Salario</label>
+                    <input type="number" name="txtsalario" id="txtsalario"> -->
+
+                    <label for="estado">Estado*</label>
+                    <select name="estado" id="estado" required>
+                        <option disabled selected>Escolha</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="mg">Minas Gerais</option>
+                    </select>
+
+                    <label for="">Estado Civil*</label>
+                    <div class="gruporadio">
+                        <label for="solteiro">
+                            <input type="radio" name="estadocivil" id="solteiro" value="solteiro" required>
+                            Solteiro(a)
+                        </label>
+                        <label for="casado">
+                            <input type="radio" name="estadocivil" id="casado" value="casado" required>
+                            Casado(a)
+                        </label>
+                        <label for="Outro">
+                            <input type="radio" name="estadocivil" id="outro" value="o  utro" required>
+                            Outro
+                        </label>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </section>
+            <p>* campo obrigatorio</p>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Copyright.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Arquivo JavaScript externo -->
+</body>
+
+</html>
