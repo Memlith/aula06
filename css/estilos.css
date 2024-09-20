@@ -153,7 +153,7 @@ input[type="text"],
 input[type="email"],
 input[type="date"],
 input[type="number"],
-#estado{
+#estado, #coment {
   width: 95%;
   padding: 10px;
   margin-bottom: 15px;
@@ -165,18 +165,25 @@ input[type="number"],
 
 input[type="date"],
 input[type="number"],
-#estado{
+#estado {
   width: 25%;
 }
-.gruporadio{
+
+.gruporadio,
+.grupocheck {
   margin-bottom: 15px;
 }
-.gruporadio label{
+
+.gruporadio label {
   display: inline-block;
   margin-right: 15px;
 }
 
-button{
+textarea{
+  resize: none;
+}
+
+button {
   width: 25%;
   padding: 15px;
   background-color: #00915c;
@@ -188,6 +195,6 @@ button{
   transition: background-color 0.3s;
 }
 
-button:hover{
+button:hover {
   background-color: #008151;
 }
